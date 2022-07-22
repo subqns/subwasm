@@ -2,16 +2,18 @@
 authors = ["chevdor <chevdor@gmail.com>"]
 edition = "2018"
 homepage = "https://github.com/chevdor/subwasm"
-keywords = ["wasm", "cli", "substrate", "blockchain", "runtime", "polkadot", "kusama"]
+keywords = ["wasm", "substrate", "runtime", "polkadot", "kusama"]
 name = "substrate-runtime-proposal-hash"
 readme = "README.md"
 repository = "https://github.com/chevdor/subwasm"
 version = "0.13.0"
+description = "Compute the proposal hash for a Substrate Runtime"
+license = "MIT"
 
 [dependencies]
 blake2 = "0.9"
 codec = { package = "parity-scale-codec", version = "2.2" }
-frame-metadata = {package = "frame-metadata", git = "https://github.com/paritytech/frame-metadata", branch = "main"}
+frame-metadata = {version = "14.0.0-rc.1", features = ["v12", "v13", "v14", "std"]}
 hex = "0.4"
 sc-executor = "0.9"
 sp-core = "3.0"

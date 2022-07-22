@@ -2,18 +2,17 @@
 edition = "2018"
 name = "substrate-differ"
 version = "0.13.0"
+description = "help comparing/diffing 2 version of Substrate metadata or 2 Runtimes"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-frame-metadata = {package = "frame-metadata", git = "https://github.com/paritytech/frame-metadata", branch = "main", features = ["v12", "v13", "v14", "std"]}
+frame-metadata = {version = "14.0.0-rc.1", features = ["v12", "v13", "v14", "std"]}
 log = "0.4"
 num-format = "0.4"
 rustc-serialize = "0.3"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 treediff = { version = "4.0", features = ["with-serde-json", "with-rustc-serialize"] }
-wasm-testbed = {path = "../wasm-testbed"}
-
-[dev-dependencies]
-wasm-loader = {path = "../wasm-loader"}
+wasm-testbed = {version = "0.13.1", path = "../wasm-testbed"}

@@ -768,8 +768,9 @@ dependencies = [
 
 [[package]]
 name = "frame-metadata"
-version = "14.0.0"
-source = "git+https://github.com/paritytech/frame-metadata?branch=main#7bb2935f9c2a51193708d5cd4b190deee726c663"
+version = "14.0.0-rc.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e3401bd6270e52e1c6c1f55c667490037f532d5013d09ae399cfe02c9ad56764"
 dependencies = [
  "cfg-if 1.0.0",
  "parity-scale-codec",
@@ -2341,9 +2342,9 @@ dependencies = [
 
 [[package]]
 name = "scale-info"
-version = "0.9.2"
+version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0af18b6ba34ebe0429199eb77e64f04c98508b8afb420aaac8fc187bb1c8ff02"
+checksum = "d2e62ff266e136db561a007c84569985805f84a1d5a08278e52c36aacb6e061b"
 dependencies = [
  "bitvec",
  "cfg-if 1.0.0",
@@ -2355,9 +2356,9 @@ dependencies = [
 
 [[package]]
 name = "scale-info-derive"
-version = "0.6.1"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "113a247fe47d242d24f4795cbc069d0a168a70da9e1cff98b5645edcc21f1eed"
+checksum = "b648fa291891a4c80187a25532f6a7d96b82c70353e30b868b14632b8fe043d6"
 dependencies = [
  "proc-macro-crate 1.0.0",
  "proc-macro2",
